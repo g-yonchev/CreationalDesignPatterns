@@ -12,7 +12,7 @@
 Абстрактния „създател“ имплементира ФАКтори метод, който връща обекти. Съдържа и метод , който има за цел чрез тестове да валидира дизайна.
 
 Всеки създател оувъррайдва абстрактния фактори метод и връща обект в зависимост от контекста.
-
+```c#
 public abstract class BookReader
 
 {
@@ -70,7 +70,7 @@ return new IKnowHowToDoDesignPatterns();
 }
 
 }
-
+```
 **Prototype Pattern**
 
 **Кратко описание:**
@@ -86,6 +86,7 @@ return new IKnowHowToDoDesignPatterns();
 Наследяващите класове имплементират функцията за клониране. C\# дава два различни начина за клониране плитко shallow copy (само обекти най-горно ниво) или дълбоко deep copy (всички обекти).
 Клиентският клас не създава сам по себе си обекти. Иска от обектите да се клонират, когато е необходимо. Клонираните обекти са перфектни копия на оригналните.
 Може да се използва и IClonable интерфейс.
+```C#
 public abstract class ProductPrototype
 
 {
@@ -159,7 +160,7 @@ return (ProductPrototype)this.MemberwiseClone();
 }
 
 }
-
+```
 **Singleton Pattern**
 
 **Кратко описание**
@@ -172,6 +173,7 @@ return (ProductPrototype)this.MemberwiseClone();
 
 За да се постигне това поведение се използва заключваща стратегия като се прави null check и се създава нова инстанция ако няма вече съществуваща.
 
+```c#
 public sealed class ConfigurationManager
     {
         private static ConfigurationManager instance;
@@ -199,3 +201,4 @@ public sealed class ConfigurationManager
             Console.WriteLine("Single instance object");
         }
     }
+```c#
