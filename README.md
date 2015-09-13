@@ -1,4 +1,4 @@
-# CreationalDesignedPatterns
+# CreationalDesignPatterns
 **Factory Method**
 
 **Кратко описание: **
